@@ -1,0 +1,18 @@
+Partition Replication
+
+partition mechanism - ppt
+create the topic
+.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic partition-mechanism-1
+describe thge topic
+.\bin\windows\kafka-topics.bat --describe --zookeeper localhost:2181
+
+code:
+cargill-producer
+1. Rirect
+ProducerKafkaDirectPartioning
+2. Round robin
+ProducerKafkaRoundRobin
+3. Key Hashing
+ProducerKafkaKeyHashing
+4. Custom
+Something wmet wrong, will discuss later
